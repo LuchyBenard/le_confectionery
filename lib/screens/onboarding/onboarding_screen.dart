@@ -69,6 +69,7 @@ class OnboardingScreen extends StatelessWidget {
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(100.r),
                                 gradient: RadialGradient(
+                                  radius: .8,
                                     colors: [
                                       AppColors.secondary,
                                       AppColors.primary
@@ -76,7 +77,7 @@ class OnboardingScreen extends StatelessWidget {
                                 )
                             ),
                             child: Center(
-                              child: Image.asset(AppAssets.previous)
+                              child: Image.asset(AppAssets.previous, height: 16.sp,)
                             ),
                           ),
                         ),
@@ -90,6 +91,7 @@ class OnboardingScreen extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(100.r),
                               gradient: RadialGradient(
+                                radius: .8,
                                 colors: [
                                   AppColors.secondary,
                                   AppColors.primary
@@ -113,6 +115,7 @@ class OnboardingScreen extends StatelessWidget {
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(100.r),
                                 gradient: RadialGradient(
+                                  radius: .8,
                                     colors: [
                                       AppColors.secondary,
                                       AppColors.primary
@@ -120,7 +123,7 @@ class OnboardingScreen extends StatelessWidget {
                                 )
                             ),
                             child: Center(
-                              child: Image.asset(AppAssets.next)
+                              child: Image.asset(AppAssets.next, height: 16.sp,)
                             ),
                           ),
                         ),
