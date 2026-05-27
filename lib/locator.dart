@@ -1,6 +1,7 @@
 
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
+import 'package:le_confectionery/screens/onboarding/onboarding_vm.dart';
 import 'package:le_confectionery/screens/splash/splash_vm.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 
@@ -20,7 +21,7 @@ void setupLocator() {
   // getIt.registerLazySingleton<UserServices>(() => UserServices());
   // getIt.registerLazySingleton<RemoteServices>(
   //         () => RemoteServices(getIt<Dio>(), getIt<UserServices>()));
-  // registerViewModel();
+   registerViewModel();
 }
 
 void setupDio() {
@@ -47,7 +48,7 @@ void registerViewModel() {
   // getIt.registerFactory<SignUpViewModel>(() => SignUpViewModel());
   // getIt.registerFactory<SignInViewModel>(() => SignInViewModel());
   // //getIt.registerFactory<SecureAccountViewModel>(() => SecureAccountViewModel());
-  // getIt.registerFactory<OnboardingViewModel>(() => OnboardingViewModel());
+   getIt.registerFactory<OnboardingViewModel>(() => OnboardingViewModel());
   // getIt.registerFactory<ForgotPasswordViewModel>(() => ForgotPasswordViewModel());
   // getIt.registerFactory<CardsViewModel>(()=> CardsViewModel());
   // getIt.registerFactory<ProfilesViewModel>(() => ProfilesViewModel());

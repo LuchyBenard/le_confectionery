@@ -27,10 +27,3 @@ class SplashViewModel extends BaseViewModel {
 
 
 }
-// enum TRANSFER_TYPE {
-//   BUCXTOBUXC = "bucxtobucx",
-// FIATTOTOKEN = "fiattotoken",
-// TOKENTOFIAT = "tokentofiat",
-// TOKENTOTOKEN = "tokentotoken",
-//
-// }
