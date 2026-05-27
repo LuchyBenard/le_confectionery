@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main () => runApp (const SplashScreen());
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 

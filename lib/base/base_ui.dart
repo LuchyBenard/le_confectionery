@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../locator.dart';
-import '../../utils/constants.dart';
-import '../../utils/pallet.dart';
 import '../../utils/widget_extensions.dart';
+import '../utils/app_colors.dart';
 import 'base.vm.dart';
 
 
@@ -15,7 +14,7 @@ class BaseView<T extends BaseViewModel> extends StatefulWidget {
   final Function(T)? onModelReady;
   final Function(T)? onModelDispose;
   final Color color;
-  const BaseView({Key? key, this.builder, this.onModelReady, this.color = AppColor.white, this.onModelDispose,this.notDefaultLoading=false}) : super(key: key);
+  const BaseView({Key? key, this.builder, this.onModelReady, this.color = AppColors.white, this.onModelDispose,this.notDefaultLoading=false}) : super(key: key);
 
   @override
   _BaseViewState<T> createState() => _BaseViewState<T>();
@@ -54,7 +53,7 @@ class _BaseViewState<T extends BaseViewModel> extends State<BaseView<T>> {
                   dismissible:false,
                 ),
                 Center(
-                    child: customProgressIndicator())
+                    child: CircularProgressIndicator())
               ])
                   : const SizedBox(),
               // ShimmerUser()
