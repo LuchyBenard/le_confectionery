@@ -10,14 +10,16 @@ class OnboardingScreen extends StatelessWidget {
       body: ListView(
         children: [
           Stack(
+            alignment: Alignment.bottomLeft,
+            fit: StackFit.loose,
             children: [
               Positioned(
                 bottom: 0,
 
                 child: Image.asset('assets/images/onb1.arc.png'),
-              )
+              ),
             ],
-          )
+          ),
         ],
       ),
     );

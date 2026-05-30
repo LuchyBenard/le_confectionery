@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:le_confectionery/screens/auth/login_screen.dart';
+import 'package:le_confectionery/screens/onboarding/get_started.dart';
+import 'package:le_confectionery/screens/onboarding/onboarding_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,8 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-    home: LoginScreen(),
-    );
+      home: LoginScreen());
   }
 }
 

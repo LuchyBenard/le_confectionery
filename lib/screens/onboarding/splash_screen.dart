@@ -1,27 +1,14 @@
 import 'package:flutter/material.dart';
 
-class SplashScreen extends StatefulWidget {
+class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
 
   @override
-  State<SplashScreen> createState() => _SplashScreenState();
-}
-
-class _SplashScreenState extends State<SplashScreen> {
-  @override
-  void initState() {
-    super.initState();
-    }
-    @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SizedBox.expand(
-        child: Image.asset(
-          'assets/images/splash.png',
-          fit: BoxFit.cover,
-        ),
+        child: Image.asset('assets/images/splash.png', fit: BoxFit.cover),
       ),
     );
   }
 }
-
